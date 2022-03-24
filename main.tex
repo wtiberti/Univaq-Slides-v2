@@ -1,0 +1,57 @@
+% Template LaTeX for slides, based on beamer
+% Author: Walter Tiberti
+% Email: walter.tiberti@univaq.it
+
+
+% Make sure the "univaqslides.cls" is present, then include this
+\documentclass{univaqslides}
+
+% Author/Title/date
+\title{Lesson Title}
+\univaqsetsubtitle{ICT Security - DT0349} 			% mandatory
+\author{Walter Tiberti, Ph.D}
+\date{\today}
+
+\begin{document}
+	% This command create the title slide
+	\univaqtitlepage
+	
+	\begin{frame}{Agenda}
+		\begin{enumerate}
+			\item Context
+			\item etc
+		\end{enumerate}
+	\end{frame}
+	
+	\begin{frame}{Slide title}
+	\begin{itemize}
+		\item Content1
+		\begin{itemize}
+			\item Content2
+			\begin{itemize}
+				\item Content 3
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+	\end{frame}
+
+	% This command create a new section slide
+	\univaqsectionpage{New Section}
+
+	\begin{frame}{Slide with columns and figure}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item Content
+				\end{itemize}
+				\begin{block}{blocktitle}		block		\end{block}
+				\begin{alertblock}{blocktitle}		alert		\end{alertblock}
+				\begin{exampleblock}{blocktitle}		example		\end{exampleblock}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\includegraphics[width=0.7\textwidth]{imgs/back43.png}
+			\end{column}
+		\end{columns}
+	\end{frame}
+
+\end{document}
